@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Signup</h1>
+    <form action="/welcome" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="user">Username</label>
+                </td>
+                <td>
+                    <input value="{{preserve_username}}" id="user" align="right" type="text" name="username"/>
+                </td>
+                <td>
+                    <span  class="error">{{username_error}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass" >Password</label>
+                </td>
+                <td>
+                    <input id="pass" type="password" name="password"/>
+                </td>
+                <td>
+                    <span  class="error">{{password_error}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="verify">Verify Password</label>
+                </td>
+                <td>
+                    <input id="verify" type="password" name="verify_pass"/>
+                </td>
+                <td>
+                    <span  class="error">{{verify_error}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="@mail">Email (optional)</label>
+                </td>
+                <td>
+                    <input value="{{preserve_email}}" id="@mail" type="text" name="email"/>
+                </td>
+                <td>
+                    <span  class="error">{{email_error}}</span>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Register"/>
+        <!-- <input id="image" type="image" src="../images/register.png" /> -->
+    </form>
+
+{% endblock %}
