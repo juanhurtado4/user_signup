@@ -2,7 +2,7 @@ error_dct = {
     'invalid_user': 'Username cannot have spaces and must be between 3 and 20 characters',
     'invalid_pass': 'Password cannot have spaces and must be between 3 and 20 characters',
     'invalid_match': 'Passwords do not match',
-    'invalid_email': 'Email can only have one "@" or ".", or spaces. Must be between 3 and 20 characters',
+    'invalid_email': 'Email can only have one "@" or "." No spaces. Must be between 3 and 20 characters',
     'empty_error': 'Please fill in field'
     }
 
